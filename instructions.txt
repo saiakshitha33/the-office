@@ -1,0 +1,51 @@
+
+
+# credentials to login: (required because app is protected with authentication) => {
+  to login as admin : [
+    {
+      email : michael@dundermifflin.com,
+      password: Michael5
+    },
+    {
+      email: david@dundermifflin.com,
+      password: David7
+    }
+  ]
+  to login as regular employee: [
+     {
+      email : jim@dundermifflin.com,
+      password: Jim7
+    },
+    {
+      email: pam@dundermifflin.com,
+      password: Pam6
+    }
+  ]
+} 
+
+you can login as admin and create your own employee from the admin section and
+can login using the email you specified and the password as 
+mind the caps of name which you specify during form creation!
+: const password = firstName + String(lastName.length);
+// eg :
+        Michael Scott => password = Michael5
+
+        similarly you can find the password of all employee based on their name,
+        from the search page.
+
+# instructions for running it locally.
+
+1. to run client on local system : 
+  a. cd client
+  b. npm install
+  c. npm start
+
+2. to run server on local system:
+  a. cd server
+  b. npm install
+  c. npm run dev or node server.js
+
+3. to connect client to local running server:
+  a. go to the /client/src/constants
+  b. change dev = true;
+
